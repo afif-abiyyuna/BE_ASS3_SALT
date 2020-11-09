@@ -6,10 +6,10 @@ const app = express();
 const port = 3000;
 
 app.use(cors());
-mongooseConnection();
+//mongooseConnection();
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use(router);
+//app.use(router);
 
 
 app.get('/',(req,res)=>{
