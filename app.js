@@ -12,7 +12,9 @@ app.use(express.json());
 app.use(router);
 
 
-
+app.get('/',(req,res)=>{
+    res.send("Welcome")
+})
 app.listen(port, ()=>{
     console.log(`app run on http://localhost:${port}`);
 });
